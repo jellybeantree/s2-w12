@@ -19,5 +19,8 @@ public class HW_Mine_Main{
  
     }
 
+    public static void main(String[] args) {
+        new HW_Mine_Main();
+    }
  
 }

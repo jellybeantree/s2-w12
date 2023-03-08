@@ -1,9 +1,9 @@
 public class HW_Student_Main{
-    HW_Student[] studs = new HW_Student[100];
+    HW_Student[] studs = new HW_Student[10];
     
     public HW_Student_Main(){
         int x = 0;
-        while(x < 1000){
+        while(x < 10){
             studs[x] = new HW_Student(x*10);
             x++;
         }
