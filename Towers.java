@@ -16,7 +16,7 @@ public class Towers{
 
   //YOU::you write this -- simple ArrayList move the last item of l to r
   private void moveFromLeftToRight(ArrayList<Integer> l,  ArrayList<Integer> r){
-
+      r.add(l.remove(left.size() - 1));
   }
 
   //YOU:: recursive moment -- base case? recursive case?
@@ -24,6 +24,7 @@ public class Towers{
       if(discs == 1){
         moveFromLeftToRight(l, r);
       } else{
+        
         //recursive moment -- this three lines! and BIG HINT: two recursive calls to this method solve
         //as well as another call to moveFromLeftToRight
       }     
@@ -44,5 +45,8 @@ public class Towers{
     System.out.println("Middle: " + middleT);
     System.out.println("Right: " + rightT);
 
+  }
+  public static void main(String[] args) {
+    Towers tower = new Towers();
   }
 }
